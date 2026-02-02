@@ -12,34 +12,40 @@ interface GalleryImage {
 const GALLERY_IMAGES: GalleryImage[] = [
     {
         id: '1',
-        url: '/gallery/studio-main.png',
-        title: 'Sala Principal',
-        description: 'Amplio espacio con espejos de pared completa y suelo profesional de madera'
+        url: '/gallery/IMG_2859.jpg',
+        title: 'Instalaciones',
+        description: 'Espacios diseñados para tu comodidad'
     },
     {
         id: '2',
-        url: '/gallery/studio-reception.png',
-        title: 'Recepción',
-        description: 'Área de recepción elegante y acogedora con diseño premium'
+        url: '/gallery/IMG_2862.jpg',
+        title: 'Sala Principal',
+        description: 'Suelo técnico y espejos de gran formato'
     },
     {
-        id: '3',
-        url: '/gallery/studio-mirrors.png',
-        title: 'Espejos Profesionales',
-        description: 'Espejos de baile profesionales con barra y iluminación óptima'
-    },
-    {
+
         id: '4',
-        url: '/gallery/studio-class.png',
-        title: 'Clases en Acción',
-        description: 'Ambiente dinámico y energético durante nuestras clases'
+        url: '/gallery/4EB040F2-F699-4BA5-9DA2-4F4BB7EDBC06.JPG', title: 'Detalles',
+        description: 'Cuidamos cada rincón'
     },
     {
-        id: '5',
-        url: '/gallery/studio-details.png',
-        title: 'Detalles del Estudio',
-        description: 'Diseño cuidado con elementos naturales y estética premium'
+        id: '8',
+        url: '/gallery/IMG_2869.jpg',
+        title: 'Iluminación',
+        description: 'Ambiente profesional'
     },
+    {
+        id: '9',
+        url: '/gallery/IMG_2879.jpg',
+        title: 'Comunidad',
+        description: 'Donde nace la pasión'
+    },
+    {
+        id: '10',
+        url: '/gallery/IMG_2860.jpg',
+        title: 'Focus Family',
+        description: 'Únete a nosotros'
+    }
 ];
 
 const Gallery: React.FC = () => {
