@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Dance Studio | Barcelona</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Jost:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              warmWhite: '#F6F3EE',
+              carbonBlack: '#1A1A1A',
+              neutralGrey: '#A9A9A9',
+              deepGreen: '#0C5A45',
+              sandNeutral: '#D8C7A5',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'], // Body
+              display: ['Jost', 'sans-serif'], // Headlines (Futura alt)
+              sub: ['Montserrat', 'sans-serif'], // Subtitles (Nexa alt)
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'liquid': 'liquid 8s ease-in-out infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              liquid: {
+                '0%, 100%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' },
+                '50%': { borderRadius: '30% 60% 70% 40% / 50% 60% 30% 60%' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      /* Hide scrollbar for clean look */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #A9A9A9; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #0C5A45; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.29.2",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-warmWhite text-carbonBlack dark:bg-carbonBlack dark:text-warmWhite transition-colors duration-500">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
