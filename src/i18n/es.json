@@ -1,0 +1,59 @@
+{
+    "hero": {
+        "tagline": "Escuela de baile premium en Barcelona",
+        "title": "ELEVATE YOUR LEVEL",
+        "subtitle": "Un espacio diseñado para subir tu nivel. Clases con intención, profes que corrigen de verdad y un ambiente social que engancha.",
+        "cta_schedule": "VER HORARIOS",
+        "cta_classes": "EXPLORAR ESTILOS"
+    },
+    "nav": {
+        "schedule": "Horarios",
+        "classes": "Clases",
+        "instructors": "Profesores",
+        "gallery": "Instalaciones",
+        "pricing": "Tarifas",
+        "contact": "Contacto"
+    },
+    "schedule": {
+        "title": "Horarios",
+        "subtitle": "Este es el horario oficial. Para reservar tu plaza, entra al portal.",
+        "cta_reserve": "Reservar",
+        "cta_portal": "Ir al portal"
+    },
+    "classes": {
+        "title": "Nuestras Clases",
+        "subtitle": "Descubre los diferentes estilos que ofrecemos",
+        "all": "Todas",
+        "bachata": "Bachata",
+        "salsa": "Salsa",
+        "urban": "Urbano",
+        "contemporary": "Contemporáneo",
+        "heels": "Heels"
+    },
+    "instructors": {
+        "title": "Nuestros Profesores",
+        "subtitle": "Equipo de profesionales apasionados por la danza"
+    },
+    "gallery": {
+        "title": "Nuestras Instalaciones",
+        "subtitle": "Un espacio diseñado para inspirar. Descubre nuestro estudio premium en el corazón de Barcelona."
+    },
+    "pricing": {
+        "title": "Tarifas",
+        "subtitle": "Elige el plan que mejor se adapte a ti",
+        "period_class": "/ clase",
+        "period_month": "/ mes",
+        "recommended": "Recomendado"
+    },
+    "contact": {
+        "title": "ÚNETE AL MOVIMIENTO",
+        "subtitle": "¿Tienes dudas sobre qué nivel escoger? Escríbenos o pásate por la escuela. Estamos aquí para guiarte.",
+        "location": "Ubicación",
+        "email": "Email",
+        "phone": "Teléfono",
+        "follow": "Síguenos",
+        "footer": "Todos los derechos reservados",
+        "legal": "Aviso Legal",
+        "privacy": "Política de Privacidad"
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "hero": {
+        "tagline": "Premium dance studio in Barcelona",
+        "title": "ELEVATE YOUR LEVEL",
+        "subtitle": "A space designed to level up. Classes with intention, teachers who really correct, and a social environment that hooks you.",
+        "cta_schedule": "VIEW SCHEDULE",
+        "cta_classes": "EXPLORE STYLES"
+    },
+    "nav": {
+        "schedule": "Schedule",
+        "classes": "Classes",
+        "instructors": "Instructors",
+        "gallery": "Facilities",
+        "pricing": "Pricing",
+        "contact": "Contact"
+    },
+    "schedule": {
+        "title": "Schedule",
+        "subtitle": "This is the official schedule. To book your spot, enter the portal.",
+        "cta_reserve": "Book Now",
+        "cta_portal": "Go to portal"
+    },
+    "classes": {
+        "title": "Our Classes",
+        "subtitle": "Discover the different styles we offer",
+        "all": "All",
+        "bachata": "Bachata",
+        "salsa": "Salsa",
+        "urban": "Urban",
+        "contemporary": "Contemporary",
+        "heels": "Heels"
+    },
+    "instructors": {
+        "title": "Our Instructors",
+        "subtitle": "Team of professionals passionate about dance"
+    },
+    "gallery": {
+        "title": "Our Facilities",
+        "subtitle": "A space designed to inspire. Discover our premium studio in the heart of Barcelona."
+    },
+    "pricing": {
+        "title": "Pricing",
+        "subtitle": "Choose the plan that best suits you",
+        "period_class": "/ class",
+        "period_month": "/ month",
+        "recommended": "Recommended"
+    },
+    "contact": {
+        "title": "JOIN THE MOVEMENT",
+        "subtitle": "Have questions about which level to choose? Write to us or stop by the school. We're here to guide you.",
+        "location": "Location",
+        "email": "Email",
+        "phone": "Phone",
+        "follow": "Follow us",
+        "footer": "All rights reserved",
+        "legal": "Legal Notice",
+        "privacy": "Privacy Policy"
+    }
+}

@@ -50,8 +50,8 @@ const ChatBot: React.FC = () => {
     setTimeout(() => {
       const lowerInput = userMsg.text.toLowerCase();
       let botResponse = "Disculpa, no entendí bien tu pregunta. Puedes escribirnos a hola@focusdancestudio.com para atención personalizada.";
-      
-      const foundAnswer = FAQ_DATA.find(item => 
+
+      const foundAnswer = FAQ_DATA.find(item =>
         item.keywords.some(keyword => lowerInput.includes(keyword))
       );
 
@@ -77,7 +77,7 @@ const ChatBot: React.FC = () => {
         animate={{ scale: 1 }}
         whileHover={{ scale: 1.1 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 bg-deepGreen text-white p-4 rounded-full shadow-2xl hover:bg-carbonBlack transition-colors"
+        className="fixed bottom-6 left-6 z-50 bg-deepGreen text-white p-4 rounded-full shadow-2xl hover:bg-carbonBlack transition-colors"
       >
         {isOpen ? <X size={24} /> : <MessageCircle size={28} />}
       </motion.button>
@@ -89,7 +89,7 @@ const ChatBot: React.FC = () => {
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            className="fixed bottom-24 right-6 z-50 w-80 md:w-96 bg-warmWhite dark:bg-neutral-900 rounded-sm shadow-2xl border border-neutralGrey/20 flex flex-col overflow-hidden max-h-[500px]"
+            className="fixed bottom-24 left-6 z-50 w-80 md:w-96 bg-warmWhite dark:bg-neutral-900 rounded-sm shadow-2xl border border-neutralGrey/20 flex flex-col overflow-hidden max-h-[500px]"
           >
             {/* Header */}
             <div className="bg-deepGreen p-4 flex items-center gap-3">
@@ -110,21 +110,18 @@ const ChatBot: React.FC = () => {
               {messages.map((msg) => (
                 <div
                   key={msg.id}
-                  className={`flex items-start gap-2 ${
-                    msg.sender === 'user' ? 'flex-row-reverse' : ''
-                  }`}
+                  className={`flex items-start gap-2 ${msg.sender === 'user' ? 'flex-row-reverse' : ''
+                    }`}
                 >
-                  <div className={`w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-1 ${
-                     msg.sender === 'user' ? 'bg-neutralGrey' : 'bg-deepGreen'
-                  }`}>
+                  <div className={`w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-1 ${msg.sender === 'user' ? 'bg-neutralGrey' : 'bg-deepGreen'
+                    }`}>
                     {msg.sender === 'user' ? <User size={14} className="text-white" /> : <Bot size={14} className="text-white" />}
                   </div>
                   <div
-                    className={`max-w-[80%] p-3 text-sm rounded-lg ${
-                      msg.sender === 'user'
+                    className={`max-w-[80%] p-3 text-sm rounded-lg ${msg.sender === 'user'
                         ? 'bg-neutralGrey/10 text-carbonBlack dark:text-warmWhite rounded-tr-none'
                         : 'bg-deepGreen/10 text-carbonBlack dark:text-warmWhite rounded-tl-none border border-deepGreen/20'
-                    }`}
+                      }`}
                   >
                     {msg.text}
                   </div>
@@ -142,7 +139,7 @@ const ChatBot: React.FC = () => {
                 placeholder="Escribe tu duda..."
                 className="flex-1 bg-white dark:bg-black border border-neutralGrey/30 rounded-sm px-3 py-2 text-sm focus:outline-none focus:border-deepGreen text-carbonBlack dark:text-warmWhite"
               />
-              <button 
+              <button
                 type="submit"
                 disabled={!inputValue.trim()}
                 className="p-2 bg-deepGreen text-white rounded-sm hover:bg-carbonBlack disabled:opacity-50 disabled:cursor-not-allowed transition-colors"

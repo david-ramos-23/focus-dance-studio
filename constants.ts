@@ -1,56 +1,62 @@
 import { ClassItem, Instructor, PricingPlan, DanceStyle } from './types';
 
-// Updated with real instructors from the provided images
-// Using high-quality unsplash placeholders that match the vibe of the specific person/style
+// Instructors with real professional photos
 export const INSTRUCTORS: Instructor[] = [
   {
     id: '1',
     name: 'Alonso Oliva',
     role: 'Director / Bachata',
-    bio: 'Director y fundador. Especialista en técnica de pareja y musicalidad.',
-    imageUrl: 'https://images.unsplash.com/photo-1504609813442-a8924e83f76e?q=80&w=800&auto=format&fit=crop', 
+    bio: 'Director y fundador de Focus Dance Studio. Especialista en técnica de pareja y musicalidad en Bachata.',
+    imageUrl: '/instructors/alonso-oliva.webp',
   },
   {
     id: '2',
     name: 'Noelia Otero',
-    role: 'Directora / Lady Style',
-    bio: 'Directora y fundadora. Potencia, estilo y elegancia en cada movimiento.',
-    imageUrl: 'https://images.unsplash.com/photo-1616001090400-50d268d37442?q=80&w=800&auto=format&fit=crop',
+    role: 'Directora / Bachata · Coreo',
+    bio: 'Directora y fundadora. Especialista en Lady Style, potencia y elegancia en cada movimiento.',
+    imageUrl: '/instructors/noelia-otero.webp',
   },
   {
     id: '3',
     name: 'Elisabeth Jiménez',
     role: 'Reggaeton / Urbano',
-    bio: 'Flow urbano y energía desbordante. Clases de alto rendimiento.',
-    imageUrl: 'https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?q=80&w=800&auto=format&fit=crop', // Urban style
+    bio: 'Flow urbano y energía desbordante. Clases de alto rendimiento para todos los niveles.',
+    imageUrl: '/instructors/elisabeth-jimenez.webp',
   },
   {
     id: '4',
     name: 'Andrea Sala',
-    role: 'Contemporáneo / Flex',
-    bio: 'Técnica contemporánea y flexibilidad específica para bailarines.',
-    imageUrl: 'https://images.unsplash.com/photo-1533174072545-e8d4aa97edf9?q=80&w=800&auto=format&fit=crop',
+    role: 'Contemporáneo / Técnica',
+    bio: 'Técnica contemporánea y flexibilidad específica para bailarines. Especialista en Flex for Dancers.',
+    imageUrl: '/instructors/andrea-sala.webp',
   },
   {
     id: '5',
     name: 'Laia Samper',
     role: 'Lírico / Jazz Fusion',
-    bio: 'Fusión de estilos y expresión artística para todas las edades.',
-    imageUrl: 'https://images.unsplash.com/photo-1518834107812-67b0b7c58434?q=80&w=800&auto=format&fit=crop', // Ballet/Jazz vibe
+    bio: 'Fusión de estilos y expresión artística. Clases para jóvenes y adultos.',
+    imageUrl: '/instructors/laia-samper.webp',
   },
   {
     id: '6',
-    name: 'Isaac & Ivone',
-    role: 'Salsa / Bachata / Izako',
-    bio: 'Pareja profesional especializada en Salsa, pasos libres y formación de equipos.',
-    imageUrl: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?q=80&w=800&auto=format&fit=crop', // Club/Couple vibe
+    name: 'Isaac Alcaraz',
+    role: 'Salsa / Izako',
+    bio: 'Especialista en Salsa, pasos libres y formación de equipos. Director del proyecto Izako.',
+    imageUrl: '/instructors/isaac-alvcaraz.webp',
   },
   {
     id: '7',
+    name: 'Ivone Fuentes',
+    role: 'Salsa / Bachata',
+    bio: 'Profesora de Salsa y Bachata con enfoque en técnica femenina y musicalidad.',
+    imageUrl: '/instructors/ivone-fuentes.webp',
+  },
+  {
+    id: '8',
     name: 'Javi & Mariluz',
-    role: 'Bachata Instructors',
-    bio: 'Conexión y didáctica detallada para todos los niveles de Bachata.',
-    imageUrl: 'https://images.unsplash.com/photo-1545959968-37c2b535d48d?q=80&w=800&auto=format&fit=crop', // Happy couple vibe
+    role: 'Bachata',
+    bio: 'Pareja de instructores especializada en Bachata. Conexión y didáctica detallada para todos los niveles.',
+    imageUrl: '/instructors/javi-mariluz.webp',
   },
 ];
 
@@ -60,7 +66,7 @@ export const CLASSES: ClassItem[] = [
   { id: 'l1', name: 'Reggaeton', style: DanceStyle.URBAN, level: 'General', time: '19:00', day: 'Lunes', instructor: 'Elisabeth' },
   { id: 'l2', name: 'Bachata Lady Style', style: DanceStyle.BACHATA, level: 'General', time: '20:00', day: 'Lunes', instructor: 'Noelia Otero' },
   { id: 'l3', name: 'Doble Filo (Grupo)', style: DanceStyle.BACHATA, level: 'Cerrado', time: '21:00', day: 'Lunes', instructor: 'Noelia Otero' },
-  
+
   // MIERCOLES (Assuming placement based on image columns)
   { id: 'x1', name: 'Bachata Inicio', style: DanceStyle.BACHATA, level: 'Iniciación', time: '19:00', day: 'Miércoles', instructor: 'Alonso Oliva' },
   { id: 'x2', name: 'Bachata Intermedio', style: DanceStyle.BACHATA, level: 'Intermedio', time: '21:00', day: 'Miércoles', instructor: 'Alonso & Noelia' },
@@ -86,25 +92,43 @@ export const CLASSES: ClassItem[] = [
 export const PRICING: PricingPlan[] = [
   {
     id: 'single',
-    name: 'Drop In',
-    price: '15€',
+    name: 'SINGLE',
+    price: '20€',
     period: '/ clase',
-    features: ['Acceso a 1 clase', 'Reserva anticipada', 'Validez 30 días'],
+    features: ['Clase suelta (OPEN O PLUS)'],
   },
   {
-    id: 'pack4',
-    name: 'Focus Pack',
-    price: '50€',
+    id: 'flow',
+    name: 'FLOW',
+    price: '39€',
     period: '/ mes',
-    features: ['4 clases mensuales', 'Acceso a eventos sociales', 'Descuento en workshops', 'Corrección personalizada'],
+    features: ['1 clase OPEN a la semana'],
+    upgrades: ['1 clase PLUS +10€ (Total: 49€)'],
+  },
+  {
+    id: 'move',
+    name: 'MOVE',
+    price: '69€',
+    period: '/ mes',
+    features: ['A escoger:', '2 clases OPEN a la semana', 'ó 1 clase OPEN + 1 clase PLUS'],
+    upgrades: ['2 clases PLUS +10€ (Total: 79€)'],
+  },
+  {
+    id: 'grow',
+    name: 'GROW',
+    price: '89€',
+    period: '/ mes',
+    features: ['A escoger:', '3 clases OPEN a la semana', 'ó 2 clases OPEN + 1 clase PLUS'],
+    upgrades: ['2 clases PLUS +10€ (Total: 99€)'],
     recommended: true,
   },
   {
-    id: 'unlimited',
-    name: 'Unlimited',
-    price: '90€',
+    id: 'focus',
+    name: 'FOCUS',
+    price: '105€',
     period: '/ mes',
-    features: ['Acceso ilimitado', 'Priority Booking', 'Masterclasses incluidas', 'Tutoría mensual 15min'],
+    features: ['A escoger:', '3 clases PLUS', 'ó 4 clases OPEN', 'ó 3 clases OPEN + 1 clase PLUS'],
+    upgrades: ['2 clases PLUS +10€ (115€)', '3 clases PLUS +20€ (125€)', '4 clases PLUS +30€ (135€)'],
   },
 ];
 

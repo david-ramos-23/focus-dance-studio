@@ -1,0 +1,59 @@
+{
+    "hero": {
+        "tagline": "Escola de ball premium a Barcelona",
+        "title": "ELEVATE YOUR LEVEL",
+        "subtitle": "Un espai dissenyat per pujar el teu nivell. Classes amb intenció, profes que corregeixen de veritat i un ambient social que enganxa.",
+        "cta_schedule": "VEURE HORARIS",
+        "cta_classes": "EXPLORAR ESTILS"
+    },
+    "nav": {
+        "schedule": "Horaris",
+        "classes": "Classes",
+        "instructors": "Professors",
+        "gallery": "Instal·lacions",
+        "pricing": "Tarifes",
+        "contact": "Contacte"
+    },
+    "schedule": {
+        "title": "Horaris",
+        "subtitle": "Aquest és l'horari oficial. Per reservar la teva plaça, entra al portal.",
+        "cta_reserve": "Reservar",
+        "cta_portal": "Anar al portal"
+    },
+    "classes": {
+        "title": "Les Nostres Classes",
+        "subtitle": "Descobreix els diferents estils que oferim",
+        "all": "Totes",
+        "bachata": "Bachata",
+        "salsa": "Salsa",
+        "urban": "Urbà",
+        "contemporary": "Contemporani",
+        "heels": "Heels"
+    },
+    "instructors": {
+        "title": "Els Nostres Professors",
+        "subtitle": "Equip de professionals apassionats per la dansa"
+    },
+    "gallery": {
+        "title": "Les Nostres Instal·lacions",
+        "subtitle": "Un espai dissenyat per inspirar. Descobreix el nostre estudi premium al cor de Barcelona."
+    },
+    "pricing": {
+        "title": "Tarifes",
+        "subtitle": "Tria el pla que millor s'adapti a tu",
+        "period_class": "/ classe",
+        "period_month": "/ mes",
+        "recommended": "Recomanat"
+    },
+    "contact": {
+        "title": "UNEIX-TE AL MOVIMENT",
+        "subtitle": "Tens dubtes sobre quin nivell triar? Escriu-nos o passa per l'escola. Som aquí per guiar-te.",
+        "location": "Ubicació",
+        "email": "Email",
+        "phone": "Telèfon",
+        "follow": "Segueix-nos",
+        "footer": "Tots els drets reservats",
+        "legal": "Avís Legal",
+        "privacy": "Política de Privacitat"
+    }
+}

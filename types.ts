@@ -22,6 +22,7 @@ export interface PricingPlan {
   price: string;
   period: string;
   features: string[];
+  upgrades?: string[];
   recommended?: boolean;
 }
 

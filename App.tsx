@@ -4,9 +4,11 @@ import Hero from './components/Hero';
 import Schedule from './components/Schedule';
 import Classes from './components/Classes';
 import Instructors from './components/Instructors';
+import Gallery from './components/Gallery';
 import Pricing from './components/Pricing';
 import Contact from './components/Contact';
 import ChatBot from './components/ChatBot';
+import ScrollToTop from './components/ScrollToTop';
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState<boolean>(() => {
@@ -34,17 +36,19 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen font-sans selection:bg-deepGreen selection:text-white">
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      
+
       <main>
         <Hero />
         <Schedule />
         <Classes />
         <Instructors />
+        <Gallery />
         <Pricing />
         <Contact />
       </main>
 
       <ChatBot />
+      <ScrollToTop />
     </div>
   );
 };

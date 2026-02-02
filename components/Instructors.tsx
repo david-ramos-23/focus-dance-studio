@@ -6,7 +6,7 @@ const Instructors: React.FC = () => {
   return (
     <section id="instructors" className="py-24 bg-warmWhite dark:bg-carbonBlack">
       <div className="max-w-7xl mx-auto px-6">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -28,15 +28,15 @@ const Instructors: React.FC = () => {
               transition={{ delay: index * 0.1 }}
               className="group relative"
             >
-              <div className="overflow-hidden aspect-[3/4] mb-6 relative bg-neutralGrey/20">
-                <img 
-                  src={instructor.imageUrl} 
-                  alt={instructor.name} 
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out scale-100 group-hover:scale-105"
+              <div className="overflow-hidden mb-6 relative bg-neutralGrey/5 dark:bg-warmWhite/5 rounded-sm">
+                <img
+                  src={instructor.imageUrl}
+                  alt={instructor.name}
+                  className="w-full h-auto object-contain grayscale-0 md:grayscale md:group-hover:grayscale-0 transition-all duration-700 ease-in-out scale-100 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-carbonBlack/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-carbonBlack/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
               </div>
-              
+
               <h3 className="font-display text-2xl font-bold text-carbonBlack dark:text-warmWhite mb-1 group-hover:text-deepGreen transition-colors">{instructor.name}</h3>
               <p className="text-xs font-bold tracking-widest text-deepGreen dark:text-sandNeutral uppercase mb-3">{instructor.role}</p>
               <p className="font-sans text-sm text-neutralGrey leading-relaxed border-l-2 border-neutralGrey/30 pl-3">
